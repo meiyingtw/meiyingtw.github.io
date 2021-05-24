@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>一</title>
+<style type="text/css">
+.auto-style2 {
+	color: rgb(51, 51, 51);
+	border-style: solid;
+	border-width: 1px;
+}
+.auto-style1 {
+	margin-right: 0px;
+	margin-bottom: 35px;
+}
+.auto-style4 {
+	background-color: #808080;
+}
+.auto-style5 {
+	color: rgb(51, 51, 51);
+}
+.auto-style3 {
+	background-color: #C0C0C0;
+}
+</style>
+</head>
+
+<body bottommargin="0" leftmargin="0" style="background-color: #808000" topmargin="0">
+
+<h4 class="auto-style2" style="box-sizing: border-box; padding: 8px; margin: 0px; font-weight: 500; font-size: 1.7em; font-family: 微軟正黑體, Arial, Helvetica, sans-serif; line-height: 1.1; background: rgb(66, 88, 143); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+一. 綜合所得總額</h4>
+<table border="0" cellpadding="0" cellspacing="0" class="auto-style1" style="border-left: 1px solid rgb(218, 218, 218); border-right: 0px solid rgb(218, 218, 218); border-top: 1px solid rgb(218, 218, 218); border-bottom: 0px solid rgb(218, 218, 218); box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; max-width: 100%; background-color: rgb(255, 255, 255); width: 730px; font-size: 0.95em; color: rgb(56, 91, 107); font-family: 微軟正黑體, Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-left: 0px; margin-top: 0px;" summary="綜所稅試算條件輸入表格">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box;">
+			<th id="group1" class="auto-style4" style="border-left: 0px solid rgb(218, 218, 218); border-right: 1px solid rgb(218, 218, 218); border-top: 0px solid rgb(218, 218, 218); border-bottom: 1px solid rgb(218, 218, 218); background-position: 0% 0%; box-sizing: border-box; padding: 5px; margin: 0px; font-weight: bold; font-style: normal; text-align: center; color: rgb(56, 91, 107); width: 7%; background-image: none; background-repeat: repeat; background-attachment: scroll;">
+			<label for="salary" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			1. 薪資：(憑單格式代號50)</label></th>
+			<td headers="group1" style="box-sizing: border-box; padding: 5px; margin: 0px; border-color: rgb(218, 218, 218); border-style: solid; border-width: 0px 1px 1px 0px;">
+			<span class="auto-style5">
+			<label for="salary" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			A.本人薪資收入：</label><span>&nbsp;</span></span><input id="salary" class="auto-style5" name="salary" style="box-sizing: border-box; padding: 0px; margin: 0px; vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<label for="sDeduct1" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			- 薪資所得特別扣除額</label><span>&nbsp;</span></span><input id="sDeduct1" class="auto-style5" name="sDeduct1" readonly="readonly" style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(229, 219, 219); vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<label for="sDeduct1Result" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			= 薪資所得</label><span>&nbsp;</span></span><input id="sDeduct1Result" class="auto-style5" name="sDeduct1Result" readonly="readonly" style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(229, 219, 219); vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<span id="salaryError" style="box-sizing: border-box; color: red;">
+			</span><br style="box-sizing: border-box;">
+			<label for="spouseSalary" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			B.配偶薪資收入：</label><span>&nbsp;</span></span><input id="spouseSalary" class="auto-style5" name="spouseSalary" onchange="doQuery();" readonly="readonly" style="box-sizing: border-box; padding: 0px; margin: 0px; vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<label for="sDeduct2" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			- 薪資所得特別扣除額</label><span>&nbsp;</span></span><input id="sDeduct2" class="auto-style5" name="sDeduct2" readonly="readonly" style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(229, 219, 219); vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<label for="sDeduct2Result" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			= 薪資所得</label><span>&nbsp;</span></span><input id="sDeduct2Result" class="auto-style5" name="sDeduct2Result" readonly="readonly" style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(229, 219, 219); vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<span id="spouseSalaryError" style="box-sizing: border-box; color: red;">
+			</span><br style="box-sizing: border-box;">
+			<label for="kindred" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			C.扶養親屬薪資收入：</label><span>&nbsp;</span></span><input id="kindred" class="auto-style5" name="kindred" style="box-sizing: border-box; padding: 0px; margin: 0px; vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<label for="sDeduct3" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			- 薪資所得特別扣除額</label><span>&nbsp;</span></span><input id="sDeduct3" class="auto-style5" name="sDeduct3" readonly="readonly" style="box-sizing: border-box; padding: 0px; margin: 0px; background: rgb(229, 219, 219); vertical-align: middle;" type="text" value="0">元<span class="auto-style5"><br style="box-sizing: border-box;">
+			<label for="sDeduct3Result" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			= 薪資所得</label></span><span>&nbsp;</span><input id="sDeduct3Result" class="gray" name="sDeduct3Result" readonly="readonly" style="box-sizing: border-box; padding: 0px; margin: 0px; color: inherit; font: inherit; background: rgb(229, 219, 219); vertical-align: middle;" type="text" value="0">元<br style="box-sizing: border-box;">
+			<span id="kindredError" style="box-sizing: border-box; color: red;">
+			</span><br style="box-sizing: border-box;"></td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<th id="group2" class="auto-style3" style="border-left: 0px solid rgb(218, 218, 218); border-right: 1px solid rgb(218, 218, 218); border-top: 0px solid rgb(218, 218, 218); border-bottom: 1px solid rgb(218, 218, 218); background-position: 0% 0%; box-sizing: border-box; padding: 5px; margin: 0px; font-weight: bold; font-style: normal; text-align: center; color: rgb(56, 91, 107); width: 7%; background-image: none; background-repeat: repeat; background-attachment: scroll;">
+			<label for="interest" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			2. 利息：(憑單格式代號5A)</label></th>
+			<td headers="group2" style="box-sizing: border-box; padding: 5px; margin: 0px; border-color: rgb(218, 218, 218); border-style: solid; border-width: 0px 1px 1px 0px;">
+			<input id="interest" class="number" name="interest" style="box-sizing: border-box; padding: 0px; margin: 0px; color: inherit; font: inherit; vertical-align: middle;" type="text" value="0">元<span id="interestError" style="box-sizing: border-box; color: red;"></span></td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<th id="group3" class="auto-style3" style="border-left: 0px solid rgb(218, 218, 218); border-right: 1px solid rgb(218, 218, 218); border-top: 0px solid rgb(218, 218, 218); border-bottom: 1px solid rgb(218, 218, 218); background-position: 0% 0%; box-sizing: border-box; padding: 5px; margin: 0px; font-weight: bold; font-style: normal; text-align: center; color: rgb(56, 91, 107); width: 7%; background-image: none; background-repeat: repeat; background-attachment: scroll;">
+			<label for="dividend" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			3. 緩課股票股利：(憑單格式代號71M)</label></th>
+			<td headers="group3" style="box-sizing: border-box; padding: 5px; margin: 0px; border-color: rgb(218, 218, 218); border-style: solid; border-width: 0px 1px 1px 0px;">
+			<input id="dividend" class="number" name="dividend" style="box-sizing: border-box; padding: 0px; margin: 0px; color: inherit; font: inherit; vertical-align: middle;" type="text" value="0">元<span id="dividendError" style="box-sizing: border-box; color: red;"></span></td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<th id="group4" class="auto-style3" style="border-left: 0px solid rgb(218, 218, 218); border-right: 1px solid rgb(218, 218, 218); border-top: 0px solid rgb(218, 218, 218); border-bottom: 1px solid rgb(218, 218, 218); background-position: 0% 0%; box-sizing: border-box; padding: 5px; margin: 0px; font-weight: bold; font-style: normal; text-align: center; color: rgb(56, 91, 107); width: 7%; background-image: none; background-repeat: repeat; background-attachment: scroll;">
+			<label for="tradeIncome" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			4. 房屋財產交易所得(<a href="javascript:void(0);" onclick="openDialog();" style="box-sizing: border-box; text-decoration: none; color: rgb(56, 91, 107); background: 0px 0px;" title="點選進入計算式"><font color="green" style="box-sizing: border-box;">點選進入計算式</font></a>)：</label></th>
+			<td headers="group4" style="box-sizing: border-box; padding: 5px; margin: 0px; border-color: rgb(218, 218, 218); border-style: solid; border-width: 0px 1px 1px 0px;">
+			<input id="tradeIncome" class="number" name="tradeIncome" style="box-sizing: border-box; padding: 0px; margin: 0px; color: inherit; font: inherit; vertical-align: middle;" type="text" value="0">元<span id="tradeIncomeError" style="box-sizing: border-box; color: red;"></span></td>
+		</tr>
+		<tr style="box-sizing: border-box;">
+			<th id="group5" class="auto-style3" style="border-left: 0px solid rgb(218, 218, 218); border-right: 1px solid rgb(218, 218, 218); border-top: 0px solid rgb(218, 218, 218); border-bottom: 1px solid rgb(218, 218, 218); background-position: 0% 0%; box-sizing: border-box; padding: 5px; margin: 0px; font-weight: bold; font-style: normal; text-align: center; color: rgb(56, 91, 107); width: 7%; background-image: none; background-repeat: repeat; background-attachment: scroll;">
+			<label for="otherIncome" style="box-sizing: border-box; display: inline-block; margin-bottom: 5px; font-weight: 700;">
+			5. 除上述以外的各類所得：</label></th>
+			<td headers="group5" style="box-sizing: border-box; padding: 5px; margin: 0px; border-color: rgb(218, 218, 218); border-style: solid; border-width: 0px 1px 1px 0px;">
+			<input id="otherIncome" class="number" name="otherIncome" style="box-sizing: border-box; padding: 0px; margin: 0px; color: inherit; font: inherit; vertical-align: middle;" type="text" value="0">元</td>
+		</tr>
+</table>
+
+</body>
+
+</html>
